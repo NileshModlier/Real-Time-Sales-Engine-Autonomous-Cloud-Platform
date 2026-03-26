@@ -1,0 +1,26 @@
+
+spark:
+  app_name: "RealTimeSalesAnalyticsEngine"
+  master: "local[*]"
+  checkpoint_location: "./checkpoints"
+
+kafka:
+  bootstrap_servers: "kafka:9092"
+  topic: "sales_events"
+  starting_offsets: "latest"
+
+postgres:
+  url: "jdbc:postgresql://postgres:5432/salesdb"
+  user: "postgres"
+  password: "StrongPassword123"
+  driver: "org.postgresql.Driver"
+  table: "fact_sales_realtime"
+  batch_size: 5000
+  max_retries: 3
+  retry_backoff_sec: 5
+
+streaming:
+  trigger_interval: "5 seconds"
+  watermark: "1 minute"
+  window_duration: "1 minute"
+  window_slide: "30 seconds"

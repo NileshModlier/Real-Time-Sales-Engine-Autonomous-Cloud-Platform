@@ -1,0 +1,5 @@
+
+Total Revenue = SUM(fact_sales_realtime[total_revenue])
+Total Orders = SUM(fact_sales_realtime[total_orders])
+Total Quantity = SUM(fact_sales_realtime[total_quantity])
+Revenue per Order = DIVIDE([Total Revenue],[Total Orders])

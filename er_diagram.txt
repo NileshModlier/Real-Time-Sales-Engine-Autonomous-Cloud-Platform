@@ -1,0 +1,3 @@
+
+[ER Diagram Placeholder]
+fact_sales_realtime ---> mv_hourly_revenue (derived)

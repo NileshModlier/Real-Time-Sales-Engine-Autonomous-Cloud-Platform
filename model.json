@@ -1,0 +1,16 @@
+
+{
+  "tables": [
+    {
+      "name": "fact_sales_realtime",
+      "columns": [
+        {"name": "window_start", "dataType": "datetime"},
+        {"name": "window_end", "dataType": "datetime"},
+        {"name": "store_location", "dataType": "string"},
+        {"name": "total_orders", "dataType": "int64"},
+        {"name": "total_quantity", "dataType": "int64"},
+        {"name": "total_revenue", "dataType": "double"}
+      ]
+    }
+  ]
+}

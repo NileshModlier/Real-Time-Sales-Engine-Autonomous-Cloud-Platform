@@ -1,0 +1,3 @@
+matrix:
+  python: [3.10,3.11]
+  spark: [3.4,3.5]

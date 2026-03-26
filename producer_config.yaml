@@ -1,0 +1,9 @@
+
+kafka:
+  bootstrap_servers: "kafka:9092"
+  topic: "sales_events"
+  acks: "all"
+  linger_ms: 5
+  batch_size: 16384
+  retries: 5
+  request_timeout_ms: 30000

@@ -1,0 +1,22 @@
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.env
+
+# Spark checkpoints & logs
+checkpoints/
+logs/
+
+# Local data
+data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node/site
+node_modules/
